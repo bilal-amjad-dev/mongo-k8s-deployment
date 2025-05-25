@@ -10,9 +10,7 @@ docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG
 Please paste your ec2-public-ip:8081
 
 Credentials: 
-
 - Username: admin  
-
 - Password: pass            
 
 
@@ -28,3 +26,9 @@ kubectl apply -f mongodb-service.yaml -n mongo-ns
 kubectl apply -f mongoexpress-deployment.yaml -n mongo-ns
 kubectl apply -f mongoexpress-service.yaml -n mongo-ns
 ```
+
+Please paste your ec2-public-ip:30081
+
+Credentials: 
+- Username: admin  
+- Password: password
