@@ -11,9 +11,9 @@ Please paste your ec2-public-ip:8081
 
 Credentials: 
 
-Username: admin  
+- Username: admin  
 
-Password: pass            
+- Password: pass            
 
 
 
