@@ -20,6 +20,7 @@ Credentials:
 
 ```bash
 kubectl create namespace mongo-ns
+kubectl apply -f mongodb-pv.yaml -n mongo-ns
 kubectl apply -f mongodb-pvc.yaml -n mongo-ns
 kubectl apply -f mongodb-deployment.yaml -n mongo-ns
 kubectl apply -f mongodb-service.yaml -n mongo-ns
@@ -31,4 +32,4 @@ Please paste your ec2-public-ip:30081
 
 Credentials: 
 - Username: admin  
-- Password: password
+- Password: pass
