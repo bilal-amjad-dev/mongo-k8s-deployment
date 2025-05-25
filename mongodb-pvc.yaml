@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: MongoDB-pvc
+  name: mongodb-pvc
   namespace: mongo-ns
 spec:
   accessModes:
