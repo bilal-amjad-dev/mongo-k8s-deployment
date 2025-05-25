@@ -1,5 +1,11 @@
 ## Deploying MongoDB and MongoExpress with Docker and Kubernetes
 
+## Fork and Clone
+```bash
+git clone https://github.com/your-github-username/mongo-k8s-deployment.git
+cd mongo-k8s-deployment
+```
+
 ### Docker Commands:
 
 ```bash
