@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: MongoExpress
+  name: mongoexpress
   namespace: mongo-ns
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: MongoExpress
+      app: mongoexpress
   template:
     metadata:
       labels:
-        app: MongoExpress
+        app: mongoexpress
     spec:
       containers:
-        - name: MongoExpress
+        - name: mongoexpress
           image: mongo-express
           env:
             - name: ME_CONFIG_MONGODB_SERVER
-              value: "MongoDB-service"
+              value: "mongodb-service"
             - name: ME_CONFIG_MONGODB_ADMINUSERNAME
               value: "admin"
             - name: ME_CONFIG_MONGODB_ADMINPASSWORD
