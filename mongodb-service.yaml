@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: MongoDB-service
+  namespace: mongo-ns
+spec:
+  selector:
+    app: MongoDB
+  ports:
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017
