@@ -1,1 +1,0 @@
-# mongo-k8s-deployment
