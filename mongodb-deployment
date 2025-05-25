@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: MongoDB
+  namespace: mongo-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: MongoDB
+  template:
+    metadata:
+      labels:
+        app: MongoDB
+    spec:
+      containers:
+        - name: MongoDB
+          image: mongo
+          env:
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: "admin"
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              value: "password"
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+            - name: MongoDB-storage
+              mountPath: /data/db
+      volumes:
+        - name: MongoDB-storage
+          persistentVolumeClaim:
+            claimName: MongoDB-pvc
