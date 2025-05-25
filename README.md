@@ -1,5 +1,5 @@
 ## Deploying MongoDB and MongoExpress with Docker and Kubernetes
-This is Mongo db with Mongo This project demonstrates how to deploy MongoDB and MongoExpress using Docker for containerization and Kubernetes for orchestration. MongoDB is a NoSQL database, and MongoExpress is a web-based admin interface for managing MongoDB databases. This guide covers setting up the environment, running the applications with Docker, and deploying them on a Kubernetes cluster.
+This project demonstrates how to deploy MongoDB and MongoExpress using Docker for containerization and Kubernetes for orchestration. MongoDB is a NoSQL database, and MongoExpress is a web-based admin interface for managing MongoDB databases. This guide covers setting up the environment, running the applications with Docker, and deploying them on a Kubernetes cluster.
 
 ## Setup Minikube
 ```bash
